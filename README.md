@@ -1,5 +1,14 @@
 # MarkView — Markdown Viewer for Chrome
 
+[![CI](https://github.com/davidcforbes/markview-chrome/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/davidcforbes/markview-chrome/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/davidcforbes/markview-chrome/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/davidcforbes/markview-chrome/actions/workflows/codeql.yml)
+[![Semgrep](https://github.com/davidcforbes/markview-chrome/actions/workflows/semgrep.yml/badge.svg?branch=main)](https://github.com/davidcforbes/markview-chrome/actions/workflows/semgrep.yml)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/davidcforbes/markview-chrome/badge)](https://scorecard.dev/viewer/?uri=github.com/davidcforbes/markview-chrome)
+[![License: PolyForm-NC-1.0.0](https://img.shields.io/badge/License-PolyForm--NC--1.0.0-blue.svg)](LICENSE)
+[![Contributor Covenant 2.1](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
+[![GitHub release](https://img.shields.io/github/v/release/davidcforbes/markview-chrome?sort=semver)](https://github.com/davidcforbes/markview-chrome/releases/latest)
+[![Last commit](https://img.shields.io/github/last-commit/davidcforbes/markview-chrome)](https://github.com/davidcforbes/markview-chrome/commits/main)
+
 A Chrome extension that detects raw Markdown files and renders them with
 GitHub-flavored Markdown support, Mermaid diagrams, syntax-highlighted code,
 math, a full dark/light theme set, and an optional CodeMirror 6 editor —

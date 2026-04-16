@@ -8,6 +8,9 @@ on:
   schedule:
     - cron: "0 7 * * 1"
 
+permissions:
+  contents: read
+
 jobs:
   analyze:
     name: Analyze JS/TS
@@ -17,12 +20,12 @@ jobs:
       actions: read
       contents: read
     steps:
-      - uses: actions/checkout@v4
-      - uses: github/codeql-action/init@v3
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - uses: github/codeql-action/init@ce64ddcb0d8d890d2df4a9d1c04ff297367dea2a # v3
         with:
           languages: javascript-typescript
           build-mode: none
           queries: security-and-quality
-      - uses: github/codeql-action/analyze@v3
+      - uses: github/codeql-action/analyze@ce64ddcb0d8d890d2df4a9d1c04ff297367dea2a # v3
         with:
           category: "/language:javascript-typescript"
