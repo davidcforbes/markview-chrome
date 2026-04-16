@@ -1,49 +1,72 @@
-# Commercial Licensing
+# Commercial / Premium Features
 
-MarkView is licensed under the [PolyForm Noncommercial 1.0.0](LICENSE) license.
-Under that license, **noncommercial use is free** — personal projects, research,
-education, non-profits, and government use do not require a paid license.
+The **MarkView Chrome extension** in this repository is [MIT-licensed](LICENSE).
+Use it freely, including at work, in commercial products, or as part of a
+paid service. No restrictions, no usage caps, no enterprise tier — the
+extension is genuinely open source.
 
-**Commercial use requires a separate commercial license.**
+This document describes the **separately-licensed premium features** that
+extend the free extension.
 
-## What counts as commercial use?
+## Supporting MarkView (free users)
 
-- Use by a for-profit company (including internal productivity use by employees)
-- Distribution of MarkView embedded in a commercial product
-- Offering MarkView as part of a paid service
-- Any use whose purpose is commercial advantage or monetary compensation
+If the extension helps you and you'd like to give back:
 
-If you are unsure whether your intended use is commercial, contact us first.
-We would rather have a conversation than a compliance problem.
+- **GitHub Sponsors** — one-off or recurring, any amount. See the Sponsor
+  button at the top of the repo or `.github/FUNDING.yml`.
+- **Corporate sponsorships** — logo placement on the README and the
+  extension's options page. Contact `chris@ForbesAssetManagement.com`.
+
+Sponsorships help keep the extension maintained and fund new features for
+the free tier.
+
+## Premium features (paid license)
+
+The open-source extension covers **viewing** — parsing, rendering, theme
+switching, Mermaid, KaTeX, TOC, search-in-page, side panel, cloud storage
+**detection and fetch**.
+
+Premium features are delivered via the **MarkView desktop companion** (a
+native messaging host) and a commercial license. They include:
+
+| Feature | Free extension | Premium |
+|---------|:-------------:|:-------:|
+| Render Markdown (GFM, Mermaid, KaTeX, syntax highlighting) | Yes | Yes |
+| Open from cloud (Drive, SharePoint, OneDrive, Teams, Dropbox, Box) | Yes | Yes |
+| Local edit via CodeMirror | Yes | Yes |
+| Save edits back to Google Drive | no | Yes |
+| Save edits back to SharePoint / OneDrive / Teams | no | Yes |
+| Save edits back to Dropbox | no | Yes |
+| Save edits back to Box | no | Yes |
+| AI assistant (summarise, rewrite, translate via Claude) | no | Yes |
+| Windows Explorer preview handler | no | Yes |
+| `.md` file-type registration on Windows | no | Yes |
+| Priority email support | no | Yes |
+| Custom SLAs + feature requests | no | Enterprise tier |
+
+Premium requires the separately-distributed MarkView desktop app plus a paid
+license key, activated inside the extension's Options page.
 
 ## Pricing
 
-Commercial licenses are available in the following tiers:
-
 | Tier | Audience | Indicative pricing |
 |------|----------|--------------------|
-| Team | Up to 25 seats | Contact for quote |
-| Business | 26–500 seats | Contact for quote |
-| Enterprise | Unlimited seats + priority support + custom SLAs | Contact for quote |
+| Individual | 1 seat | Contact for pilot pricing |
+| Team | 2-25 seats | Contact for quote |
+| Business | 26-500 seats | Contact for quote |
+| Enterprise | Unlimited seats + priority support + custom SLAs + source-code escrow | Contact |
 
-Pricing is finalized per engagement. Volume discounts, OEM arrangements, and
-source-code escrow are available on request.
-
-## Supporting MarkView Noncommercially
-
-If you use MarkView noncommercially and want to support development:
-
-- **GitHub Sponsors**: (link will be added when Sponsors is enabled)
-- **One-off donations**: (payment link forthcoming)
+Final pricing is per engagement. Volume discounts, OEM arrangements, and
+educational / non-profit pricing are available on request.
 
 ## Contact
 
-For commercial licensing inquiries, donation receipts, or sponsorship
+For commercial licenses, premium feature inquiries, or sponsorship
 discussions, email **chris@ForbesAssetManagement.com**.
 
-Please include:
+Include:
 
 - Your organization name
-- Intended use (deployment scale, internal vs external-facing, etc.)
-- Any specific features or integrations you need
+- Intended use (deployment scale, internal vs. external-facing)
+- Which premium features you want
 - Target start date

@@ -11,7 +11,7 @@ breaks or goes grey, this doc explains how to diagnose and fix it.
 | CodeQL | `.github/workflows/codeql.yml` | 0 security alerts in the JS/TS code |
 | Semgrep | `.github/workflows/semgrep.yml` | 0 findings in OWASP Top Ten / JS / secrets rulesets |
 | OpenSSF Scorecard | `.github/workflows/scorecard.yml` + published to https://scorecard.dev | Supply-chain security score (0–10, higher is better) |
-| License | Static shields.io badge | PolyForm Noncommercial 1.0.0 |
+| License | Static shields.io badge | MIT |
 | Contributor Covenant | Static shields.io badge | v2.1 adopted |
 | GitHub release | Dynamic shields.io | Latest semver-sorted release tag |
 | Last commit | Dynamic shields.io | Recent activity — proxy for "maintained" |

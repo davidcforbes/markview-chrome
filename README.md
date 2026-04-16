@@ -5,7 +5,7 @@
 [![Semgrep](https://github.com/davidcforbes/markview-chrome/actions/workflows/semgrep.yml/badge.svg?branch=main)](https://github.com/davidcforbes/markview-chrome/actions/workflows/semgrep.yml)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/davidcforbes/markview-chrome/badge)](https://scorecard.dev/viewer/?uri=github.com/davidcforbes/markview-chrome)
 [![codecov](https://codecov.io/github/davidcforbes/markview-chrome/branch/main/graph/badge.svg)](https://codecov.io/github/davidcforbes/markview-chrome)
-[![License: PolyForm-NC-1.0.0](https://img.shields.io/badge/License-PolyForm--NC--1.0.0-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Contributor Covenant 2.1](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 [![GitHub release](https://img.shields.io/github/v/release/davidcforbes/markview-chrome?sort=semver)](https://github.com/davidcforbes/markview-chrome/releases/latest)
 [![Last commit](https://img.shields.io/github/last-commit/davidcforbes/markview-chrome)](https://github.com/davidcforbes/markview-chrome/commits/main)
@@ -95,12 +95,16 @@ it to you. See [PRIVACY.md](PRIVACY.md) for the full policy.
 
 ## License
 
-Source-available under the [PolyForm Noncommercial 1.0.0](LICENSE) license.
+**[MIT](LICENSE).** Use the extension freely, including at work or in
+commercial products. No restrictions, no usage caps.
 
-- **Free** for personal, research, educational, non-profit, and government
-  use.
-- **Commercial use** requires a paid license. See [COMMERCIAL.md](COMMERCIAL.md)
-  for terms and contact info.
+## Support the project & premium features
+
+If the extension helps you, consider [sponsoring the project](https://github.com/sponsors/davidcforbes).
+
+For advanced features — saving edits back to Google Drive / SharePoint / Teams
+/ Dropbox / Box, the AI assistant, and the Windows Explorer preview handler —
+see the [commercial premium tier](COMMERCIAL.md).
 
 ## Optional desktop companion
 

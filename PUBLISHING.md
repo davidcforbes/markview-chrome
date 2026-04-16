@@ -88,12 +88,13 @@ sending data to any third-party server.
 > browser. No analytics, no telemetry, no account. File content is read
 > only to display it to you. Read the full [privacy policy](https://github.com/davidcforbes/markview/blob/master/PRIVACY.md).
 >
-> **Open source**
+> **Open source (MIT)**
 >
-> Source is available at https://github.com/davidcforbes/markview under
-> the PolyForm Noncommercial 1.0.0 license. Free for personal, research,
-> educational, non-profit, and government use. Commercial licenses
-> available.
+> The extension source is at https://github.com/davidcforbes/markview-chrome
+> under the MIT License. Use it freely, including at work or in commercial
+> products. Premium features (save-back-to-cloud, AI assistant, Windows
+> Explorer preview handler) are separately licensed via the MarkView
+> desktop companion — see COMMERCIAL.md.
 >
 > **Support & feedback**
 >

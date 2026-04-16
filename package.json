@@ -10,7 +10,7 @@
   },
   "keywords": ["markdown", "chrome-extension", "viewer", "mermaid"],
   "author": "David Forbes / Forbes Asset Management",
-  "license": "SEE LICENSE IN ../LICENSE",
+  "license": "MIT",
   "type": "commonjs",
   "devDependencies": {
     "@codemirror/lang-markdown": "^6.5.0",
