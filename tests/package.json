@@ -1,0 +1,14 @@
+{
+  "name": "markview-chrome-tests",
+  "version": "0.5.2",
+  "private": true,
+  "description": "Smoke + unit tests for the MarkView Chrome extension",
+  "scripts": {
+    "test:unit": "node --test unit/*.test.mjs",
+    "test:e2e": "playwright test",
+    "test": "npm run test:unit && npm run test:e2e"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0"
+  }
+}

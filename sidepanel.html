@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MarkView</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #24292e;
+      background: #ffffff;
+      padding: 1rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #1e1e1e;
+        color: #d4d4d4;
+      }
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #e1e4e8;
+    }
+
+    header h1 {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    #content {
+      overflow-y: auto;
+    }
+
+    .placeholder {
+      color: #6a737d;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MarkView</h1>
+  </header>
+
+  <div id="content">
+    <p class="placeholder">
+      Navigate to a <code>.md</code> file to see the rendered preview here.
+    </p>
+  </div>
+
+  <script>
+    // Side panel script -- listens for messages from the content script
+    // to display rendered markdown alongside the original page.
+    //
+    // TODO: Integrate DOMPurify to sanitize incoming HTML before insertion.
+    // For now this is a skeleton that will receive pre-sanitized content
+    // from the content script via the shared renderer.
+    chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+      if (message.type === "renderInPanel") {
+        const content = document.getElementById("content");
+        // Use textContent for safety until DOMPurify is integrated
+        content.textContent = message.text || "";
+        sendResponse({ ok: true });
+      }
+    });
+  </script>
+</body>
+</html>

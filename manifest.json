@@ -1,0 +1,77 @@
+{
+  "name": "MarkView - Markdown Viewer",
+  "version": "0.5.2",
+  "manifest_version": 3,
+  "description": "A rich markdown viewer with mermaid diagrams, syntax highlighting, and dark/light themes.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "declarativeNetRequest",
+    "nativeMessaging",
+    "identity"
+  ],
+  "oauth2": {
+    "client_id": "619529589625-1udtkfntpkacg57raqo1t8plo4vokgnq.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/drive.readonly"
+    ]
+  },
+  "host_permissions": [
+    "file:///*",
+    "*://*/*.md",
+    "*://*/*.markdown",
+    "*://drive.google.com/*",
+    "*://docs.google.com/*",
+    "*://www.dropbox.com/*",
+    "*://app.box.com/*",
+    "*://*.sharepoint.com/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "file:///*/*.md",
+        "file:///*/*.markdown",
+        "*://*/*.md",
+        "*://*/*.markdown",
+        "*://drive.google.com/*",
+        "*://docs.google.com/*",
+        "*://www.dropbox.com/*",
+        "*://app.box.com/*",
+        "*://*.sharepoint.com/*"
+      ],
+      "js": ["marked.min.js", "purify.min.js", "markview-renderer.js", "error-toast.js", "native-ai.js", "content-script.js"],
+      "css": ["markview-themes.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["markview-renderer.js", "markview-toolbar.js", "markview-themes.css", "viewer.html", "viewer-init.js", "codemirror-bundle.js", "error-toast.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "md_intercept",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}

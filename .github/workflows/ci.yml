@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  unit:
+    name: Unit tests (Node)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: tests/package-lock.json
+      - run: npm ci
+        working-directory: tests
+      - run: npm run test:unit
+        working-directory: tests
+
+  npm-audit:
+    name: npm audit (extension deps)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm ci
+      - name: Audit (high+ severity fails)
+        run: npm audit --audit-level=high
+
+  validate-manifest:
+    name: Validate manifest.json
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: JSON syntax
+        run: node -e "JSON.parse(require('fs').readFileSync('manifest.json','utf8'))"
+      - name: Required fields
+        run: |
+          node -e "
+            const m = JSON.parse(require('fs').readFileSync('manifest.json','utf8'));
+            const required = ['manifest_version', 'name', 'version', 'description', 'permissions', 'content_scripts'];
+            for (const k of required) if (m[k] == null) { console.error('missing:', k); process.exit(1); }
+            if (m.manifest_version !== 3) { console.error('must be MV3'); process.exit(1); }
+            console.log('manifest OK @ v' + m.version);
+          "

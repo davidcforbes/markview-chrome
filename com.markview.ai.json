@@ -1,0 +1,10 @@
+{
+  "_comment": "Template. install.ps1 generates the production version at install time. EXTENSION_ID and INSTALL_DIR are replaced with the resolved extension ID and install directory.",
+  "name": "com.markview.ai",
+  "description": "MarkView AI Assistant — bridges Chrome extension to Claude Code CLI",
+  "path": "INSTALL_DIR\\markview.exe",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://EXTENSION_ID/"
+  ]
+}

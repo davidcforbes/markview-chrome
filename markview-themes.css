@@ -1,0 +1,774 @@
+/* MarkView — auto-generated scheme variables */
+
+[data-mv-scheme="default"][data-mv-theme="dark"] {
+  --mv-bg: rgb(31, 31, 31);
+  --mv-text: rgb(230, 230, 230);
+  --mv-heading: rgb(230, 230, 230);
+  --mv-link: rgb(0, 120, 215);
+  --mv-code-bg: rgb(46, 46, 46);
+  --mv-code-text: rgb(230, 230, 230);
+  --mv-border: rgb(102, 102, 102);
+  --mv-blockquote-border: rgb(0, 120, 215);
+  --mv-blockquote-text: rgb(230, 230, 230);
+  --mv-bold: rgb(230, 230, 230);
+  --mv-italic: rgb(230, 230, 230);
+  --mv-code-inline-bg: rgb(46, 46, 46);
+  --mv-code-inline-text: rgb(230, 230, 230);
+  --mv-bullet: rgb(230, 230, 230);
+  --mv-task-checkbox: rgb(230, 230, 230);
+  --mv-task-checkmark: rgb(0, 120, 215);
+  --mv-table-header-bg: rgb(46, 46, 46);
+  --mv-hr: rgb(102, 102, 102);
+  --mv-selection-bg: rgb(0, 120, 215);
+  --mv-mermaid-label: rgb(0, 120, 215);
+  --mv-ui-gray: rgb(102, 102, 102);
+  --mv-toolbar-bg: rgba(31, 31, 31, 0.92);
+  --mv-toolbar-text: rgb(230, 230, 230);
+  --mv-toolbar-shadow: 0 2px 8px rgba(31, 31, 31, 0.30);
+  --mv-toolbar-btn-hover: rgba(102, 102, 102, 0.22);
+  --mv-toolbar-border: rgba(102, 102, 102, 0.35);
+  --mv-toolbar-active: rgba(0, 120, 215, 0.18);
+  --mv-toolbar-disabled: rgba(102, 102, 102, 0.45);
+  --mv-menu-bg: rgb(31, 31, 31);
+  --mv-menu-sep: rgba(102, 102, 102, 0.30);
+  --mv-submenu-arrow: rgb(102, 102, 102);
+}
+
+[data-mv-scheme="default"][data-mv-theme="light"] {
+  --mv-bg: rgb(255, 255, 255);
+  --mv-text: rgb(26, 26, 26);
+  --mv-heading: rgb(26, 26, 26);
+  --mv-link: rgb(0, 120, 215);
+  --mv-code-bg: rgb(242, 242, 242);
+  --mv-code-text: rgb(26, 26, 26);
+  --mv-border: rgb(179, 179, 179);
+  --mv-blockquote-border: rgb(0, 120, 215);
+  --mv-blockquote-text: rgb(26, 26, 26);
+  --mv-bold: rgb(26, 26, 26);
+  --mv-italic: rgb(26, 26, 26);
+  --mv-code-inline-bg: rgb(242, 242, 242);
+  --mv-code-inline-text: rgb(26, 26, 26);
+  --mv-bullet: rgb(26, 26, 26);
+  --mv-task-checkbox: rgb(26, 26, 26);
+  --mv-task-checkmark: rgb(0, 120, 215);
+  --mv-table-header-bg: rgb(242, 242, 242);
+  --mv-hr: rgb(179, 179, 179);
+  --mv-selection-bg: rgb(0, 120, 215);
+  --mv-mermaid-label: rgb(0, 120, 215);
+  --mv-ui-gray: rgb(179, 179, 179);
+  --mv-toolbar-bg: rgba(255, 255, 255, 0.92);
+  --mv-toolbar-text: rgb(26, 26, 26);
+  --mv-toolbar-shadow: 0 2px 8px rgba(255, 255, 255, 0.30);
+  --mv-toolbar-btn-hover: rgba(179, 179, 179, 0.22);
+  --mv-toolbar-border: rgba(179, 179, 179, 0.35);
+  --mv-toolbar-active: rgba(0, 120, 215, 0.18);
+  --mv-toolbar-disabled: rgba(179, 179, 179, 0.45);
+  --mv-menu-bg: rgb(255, 255, 255);
+  --mv-menu-sep: rgba(179, 179, 179, 0.30);
+  --mv-submenu-arrow: rgb(179, 179, 179);
+}
+
+[data-mv-scheme="dracula"][data-mv-theme="dark"] {
+  --mv-bg: rgb(40, 42, 54);
+  --mv-text: rgb(248, 248, 242);
+  --mv-heading: rgb(189, 147, 249);
+  --mv-link: rgb(139, 233, 253);
+  --mv-code-bg: rgb(68, 71, 90);
+  --mv-code-text: rgb(248, 248, 242);
+  --mv-border: rgb(98, 114, 164);
+  --mv-blockquote-border: rgb(189, 147, 249);
+  --mv-blockquote-text: rgb(98, 114, 164);
+  --mv-bold: rgb(255, 184, 108);
+  --mv-italic: rgb(139, 233, 253);
+  --mv-code-inline-bg: rgb(68, 71, 90);
+  --mv-code-inline-text: rgb(80, 250, 123);
+  --mv-bullet: rgb(255, 121, 198);
+  --mv-task-checkbox: rgb(248, 248, 242);
+  --mv-task-checkmark: rgb(80, 250, 123);
+  --mv-table-header-bg: rgb(68, 71, 90);
+  --mv-hr: rgb(98, 114, 164);
+  --mv-selection-bg: rgb(68, 71, 90);
+  --mv-mermaid-label: rgb(189, 147, 249);
+  --mv-ui-gray: rgb(98, 114, 164);
+  --mv-toolbar-bg: rgba(40, 42, 54, 0.92);
+  --mv-toolbar-text: rgb(248, 248, 242);
+  --mv-toolbar-shadow: 0 2px 8px rgba(40, 42, 54, 0.30);
+  --mv-toolbar-btn-hover: rgba(98, 114, 164, 0.22);
+  --mv-toolbar-border: rgba(98, 114, 164, 0.35);
+  --mv-toolbar-active: rgba(139, 233, 253, 0.18);
+  --mv-toolbar-disabled: rgba(98, 114, 164, 0.45);
+  --mv-menu-bg: rgb(40, 42, 54);
+  --mv-menu-sep: rgba(98, 114, 164, 0.30);
+  --mv-submenu-arrow: rgb(98, 114, 164);
+}
+
+[data-mv-scheme="dracula"][data-mv-theme="light"] {
+  --mv-bg: rgb(248, 248, 248);
+  --mv-text: rgb(40, 42, 54);
+  --mv-heading: rgb(126, 87, 194);
+  --mv-link: rgb(56, 158, 172);
+  --mv-code-bg: rgb(232, 232, 240);
+  --mv-code-text: rgb(40, 42, 54);
+  --mv-border: rgb(160, 168, 190);
+  --mv-blockquote-border: rgb(126, 87, 194);
+  --mv-blockquote-text: rgb(80, 90, 120);
+  --mv-bold: rgb(204, 128, 51);
+  --mv-italic: rgb(56, 158, 172);
+  --mv-code-inline-bg: rgb(232, 232, 240);
+  --mv-code-inline-text: rgb(30, 160, 70);
+  --mv-bullet: rgb(200, 70, 130);
+  --mv-task-checkbox: rgb(40, 42, 54);
+  --mv-task-checkmark: rgb(30, 160, 70);
+  --mv-table-header-bg: rgb(232, 232, 240);
+  --mv-hr: rgb(160, 168, 190);
+  --mv-selection-bg: rgb(200, 200, 220);
+  --mv-mermaid-label: rgb(126, 87, 194);
+  --mv-ui-gray: rgb(160, 168, 190);
+  --mv-toolbar-bg: rgba(248, 248, 248, 0.92);
+  --mv-toolbar-text: rgb(40, 42, 54);
+  --mv-toolbar-shadow: 0 2px 8px rgba(248, 248, 248, 0.30);
+  --mv-toolbar-btn-hover: rgba(160, 168, 190, 0.22);
+  --mv-toolbar-border: rgba(160, 168, 190, 0.35);
+  --mv-toolbar-active: rgba(56, 158, 172, 0.18);
+  --mv-toolbar-disabled: rgba(160, 168, 190, 0.45);
+  --mv-menu-bg: rgb(248, 248, 248);
+  --mv-menu-sep: rgba(160, 168, 190, 0.30);
+  --mv-submenu-arrow: rgb(160, 168, 190);
+}
+
+[data-mv-scheme="solarized"][data-mv-theme="dark"] {
+  --mv-bg: rgb(0, 43, 54);
+  --mv-text: rgb(131, 148, 150);
+  --mv-heading: rgb(38, 139, 210);
+  --mv-link: rgb(38, 139, 210);
+  --mv-code-bg: rgb(7, 54, 66);
+  --mv-code-text: rgb(131, 148, 150);
+  --mv-border: rgb(88, 110, 117);
+  --mv-blockquote-border: rgb(108, 113, 196);
+  --mv-blockquote-text: rgb(101, 123, 131);
+  --mv-bold: rgb(181, 137, 0);
+  --mv-italic: rgb(42, 161, 152);
+  --mv-code-inline-bg: rgb(7, 54, 66);
+  --mv-code-inline-text: rgb(133, 153, 0);
+  --mv-bullet: rgb(203, 75, 22);
+  --mv-task-checkbox: rgb(131, 148, 150);
+  --mv-task-checkmark: rgb(133, 153, 0);
+  --mv-table-header-bg: rgb(7, 54, 66);
+  --mv-hr: rgb(88, 110, 117);
+  --mv-selection-bg: rgb(7, 54, 66);
+  --mv-mermaid-label: rgb(38, 139, 210);
+  --mv-ui-gray: rgb(88, 110, 117);
+  --mv-toolbar-bg: rgba(0, 43, 54, 0.92);
+  --mv-toolbar-text: rgb(131, 148, 150);
+  --mv-toolbar-shadow: 0 2px 8px rgba(0, 43, 54, 0.30);
+  --mv-toolbar-btn-hover: rgba(88, 110, 117, 0.22);
+  --mv-toolbar-border: rgba(88, 110, 117, 0.35);
+  --mv-toolbar-active: rgba(38, 139, 210, 0.18);
+  --mv-toolbar-disabled: rgba(88, 110, 117, 0.45);
+  --mv-menu-bg: rgb(0, 43, 54);
+  --mv-menu-sep: rgba(88, 110, 117, 0.30);
+  --mv-submenu-arrow: rgb(88, 110, 117);
+}
+
+[data-mv-scheme="solarized"][data-mv-theme="light"] {
+  --mv-bg: rgb(253, 246, 227);
+  --mv-text: rgb(101, 123, 131);
+  --mv-heading: rgb(38, 139, 210);
+  --mv-link: rgb(38, 139, 210);
+  --mv-code-bg: rgb(238, 232, 213);
+  --mv-code-text: rgb(101, 123, 131);
+  --mv-border: rgb(147, 161, 161);
+  --mv-blockquote-border: rgb(108, 113, 196);
+  --mv-blockquote-text: rgb(131, 148, 150);
+  --mv-bold: rgb(181, 137, 0);
+  --mv-italic: rgb(42, 161, 152);
+  --mv-code-inline-bg: rgb(238, 232, 213);
+  --mv-code-inline-text: rgb(133, 153, 0);
+  --mv-bullet: rgb(203, 75, 22);
+  --mv-task-checkbox: rgb(101, 123, 131);
+  --mv-task-checkmark: rgb(133, 153, 0);
+  --mv-table-header-bg: rgb(238, 232, 213);
+  --mv-hr: rgb(147, 161, 161);
+  --mv-selection-bg: rgb(238, 232, 213);
+  --mv-mermaid-label: rgb(38, 139, 210);
+  --mv-ui-gray: rgb(147, 161, 161);
+  --mv-toolbar-bg: rgba(253, 246, 227, 0.92);
+  --mv-toolbar-text: rgb(101, 123, 131);
+  --mv-toolbar-shadow: 0 2px 8px rgba(253, 246, 227, 0.30);
+  --mv-toolbar-btn-hover: rgba(147, 161, 161, 0.22);
+  --mv-toolbar-border: rgba(147, 161, 161, 0.35);
+  --mv-toolbar-active: rgba(38, 139, 210, 0.18);
+  --mv-toolbar-disabled: rgba(147, 161, 161, 0.45);
+  --mv-menu-bg: rgb(253, 246, 227);
+  --mv-menu-sep: rgba(147, 161, 161, 0.30);
+  --mv-submenu-arrow: rgb(147, 161, 161);
+}
+
+[data-mv-scheme="nord"][data-mv-theme="dark"] {
+  --mv-bg: rgb(46, 52, 64);
+  --mv-text: rgb(216, 222, 233);
+  --mv-heading: rgb(136, 192, 208);
+  --mv-link: rgb(129, 161, 193);
+  --mv-code-bg: rgb(59, 66, 82);
+  --mv-code-text: rgb(216, 222, 233);
+  --mv-border: rgb(76, 86, 106);
+  --mv-blockquote-border: rgb(136, 192, 208);
+  --mv-blockquote-text: rgb(178, 186, 200);
+  --mv-bold: rgb(235, 203, 139);
+  --mv-italic: rgb(180, 142, 173);
+  --mv-code-inline-bg: rgb(59, 66, 82);
+  --mv-code-inline-text: rgb(163, 190, 140);
+  --mv-bullet: rgb(191, 97, 106);
+  --mv-task-checkbox: rgb(216, 222, 233);
+  --mv-task-checkmark: rgb(163, 190, 140);
+  --mv-table-header-bg: rgb(59, 66, 82);
+  --mv-hr: rgb(76, 86, 106);
+  --mv-selection-bg: rgb(67, 76, 94);
+  --mv-mermaid-label: rgb(136, 192, 208);
+  --mv-ui-gray: rgb(76, 86, 106);
+  --mv-toolbar-bg: rgba(46, 52, 64, 0.92);
+  --mv-toolbar-text: rgb(216, 222, 233);
+  --mv-toolbar-shadow: 0 2px 8px rgba(46, 52, 64, 0.30);
+  --mv-toolbar-btn-hover: rgba(76, 86, 106, 0.22);
+  --mv-toolbar-border: rgba(76, 86, 106, 0.35);
+  --mv-toolbar-active: rgba(129, 161, 193, 0.18);
+  --mv-toolbar-disabled: rgba(76, 86, 106, 0.45);
+  --mv-menu-bg: rgb(46, 52, 64);
+  --mv-menu-sep: rgba(76, 86, 106, 0.30);
+  --mv-submenu-arrow: rgb(76, 86, 106);
+}
+
+[data-mv-scheme="nord"][data-mv-theme="light"] {
+  --mv-bg: rgb(236, 239, 244);
+  --mv-text: rgb(59, 66, 82);
+  --mv-heading: rgb(94, 129, 172);
+  --mv-link: rgb(94, 129, 172);
+  --mv-code-bg: rgb(229, 233, 240);
+  --mv-code-text: rgb(59, 66, 82);
+  --mv-border: rgb(178, 186, 200);
+  --mv-blockquote-border: rgb(94, 129, 172);
+  --mv-blockquote-text: rgb(76, 86, 106);
+  --mv-bold: rgb(208, 135, 112);
+  --mv-italic: rgb(180, 142, 173);
+  --mv-code-inline-bg: rgb(229, 233, 240);
+  --mv-code-inline-text: rgb(163, 190, 140);
+  --mv-bullet: rgb(191, 97, 106);
+  --mv-task-checkbox: rgb(59, 66, 82);
+  --mv-task-checkmark: rgb(163, 190, 140);
+  --mv-table-header-bg: rgb(229, 233, 240);
+  --mv-hr: rgb(178, 186, 200);
+  --mv-selection-bg: rgb(216, 222, 233);
+  --mv-mermaid-label: rgb(94, 129, 172);
+  --mv-ui-gray: rgb(178, 186, 200);
+  --mv-toolbar-bg: rgba(236, 239, 244, 0.92);
+  --mv-toolbar-text: rgb(59, 66, 82);
+  --mv-toolbar-shadow: 0 2px 8px rgba(236, 239, 244, 0.30);
+  --mv-toolbar-btn-hover: rgba(178, 186, 200, 0.22);
+  --mv-toolbar-border: rgba(178, 186, 200, 0.35);
+  --mv-toolbar-active: rgba(94, 129, 172, 0.18);
+  --mv-toolbar-disabled: rgba(178, 186, 200, 0.45);
+  --mv-menu-bg: rgb(236, 239, 244);
+  --mv-menu-sep: rgba(178, 186, 200, 0.30);
+  --mv-submenu-arrow: rgb(178, 186, 200);
+}
+
+[data-mv-scheme="monokai-pro"][data-mv-theme="dark"] {
+  --mv-bg: rgb(45, 42, 46);
+  --mv-text: rgb(252, 252, 250);
+  --mv-heading: rgb(255, 97, 136);
+  --mv-link: rgb(120, 220, 232);
+  --mv-code-bg: rgb(57, 53, 58);
+  --mv-code-text: rgb(252, 252, 250);
+  --mv-border: rgb(114, 109, 118);
+  --mv-blockquote-border: rgb(171, 157, 242);
+  --mv-blockquote-text: rgb(199, 199, 195);
+  --mv-bold: rgb(255, 216, 102);
+  --mv-italic: rgb(120, 220, 232);
+  --mv-code-inline-bg: rgb(57, 53, 58);
+  --mv-code-inline-text: rgb(169, 220, 118);
+  --mv-bullet: rgb(255, 97, 136);
+  --mv-task-checkbox: rgb(252, 252, 250);
+  --mv-task-checkmark: rgb(169, 220, 118);
+  --mv-table-header-bg: rgb(57, 53, 58);
+  --mv-hr: rgb(114, 109, 118);
+  --mv-selection-bg: rgb(82, 78, 84);
+  --mv-mermaid-label: rgb(171, 157, 242);
+  --mv-ui-gray: rgb(114, 109, 118);
+  --mv-toolbar-bg: rgba(45, 42, 46, 0.92);
+  --mv-toolbar-text: rgb(252, 252, 250);
+  --mv-toolbar-shadow: 0 2px 8px rgba(45, 42, 46, 0.30);
+  --mv-toolbar-btn-hover: rgba(114, 109, 118, 0.22);
+  --mv-toolbar-border: rgba(114, 109, 118, 0.35);
+  --mv-toolbar-active: rgba(120, 220, 232, 0.18);
+  --mv-toolbar-disabled: rgba(114, 109, 118, 0.45);
+  --mv-menu-bg: rgb(45, 42, 46);
+  --mv-menu-sep: rgba(114, 109, 118, 0.30);
+  --mv-submenu-arrow: rgb(114, 109, 118);
+}
+
+[data-mv-scheme="monokai-pro"][data-mv-theme="light"] {
+  --mv-bg: rgb(251, 251, 249);
+  --mv-text: rgb(45, 42, 46);
+  --mv-heading: rgb(210, 50, 85);
+  --mv-link: rgb(50, 160, 175);
+  --mv-code-bg: rgb(238, 237, 236);
+  --mv-code-text: rgb(45, 42, 46);
+  --mv-border: rgb(185, 182, 188);
+  --mv-blockquote-border: rgb(130, 115, 200);
+  --mv-blockquote-text: rgb(90, 87, 92);
+  --mv-bold: rgb(185, 155, 40);
+  --mv-italic: rgb(50, 160, 175);
+  --mv-code-inline-bg: rgb(238, 237, 236);
+  --mv-code-inline-text: rgb(100, 160, 60);
+  --mv-bullet: rgb(210, 50, 85);
+  --mv-task-checkbox: rgb(45, 42, 46);
+  --mv-task-checkmark: rgb(100, 160, 60);
+  --mv-table-header-bg: rgb(238, 237, 236);
+  --mv-hr: rgb(185, 182, 188);
+  --mv-selection-bg: rgb(216, 214, 220);
+  --mv-mermaid-label: rgb(130, 115, 200);
+  --mv-ui-gray: rgb(185, 182, 188);
+  --mv-toolbar-bg: rgba(251, 251, 249, 0.92);
+  --mv-toolbar-text: rgb(45, 42, 46);
+  --mv-toolbar-shadow: 0 2px 8px rgba(251, 251, 249, 0.30);
+  --mv-toolbar-btn-hover: rgba(185, 182, 188, 0.22);
+  --mv-toolbar-border: rgba(185, 182, 188, 0.35);
+  --mv-toolbar-active: rgba(50, 160, 175, 0.18);
+  --mv-toolbar-disabled: rgba(185, 182, 188, 0.45);
+  --mv-menu-bg: rgb(251, 251, 249);
+  --mv-menu-sep: rgba(185, 182, 188, 0.30);
+  --mv-submenu-arrow: rgb(185, 182, 188);
+}
+
+[data-mv-scheme="gruvbox"][data-mv-theme="dark"] {
+  --mv-bg: rgb(40, 40, 40);
+  --mv-text: rgb(235, 219, 178);
+  --mv-heading: rgb(131, 165, 152);
+  --mv-link: rgb(131, 165, 152);
+  --mv-code-bg: rgb(60, 56, 54);
+  --mv-code-text: rgb(235, 219, 178);
+  --mv-border: rgb(102, 92, 84);
+  --mv-blockquote-border: rgb(254, 128, 25);
+  --mv-blockquote-text: rgb(189, 174, 147);
+  --mv-bold: rgb(250, 189, 47);
+  --mv-italic: rgb(211, 134, 155);
+  --mv-code-inline-bg: rgb(60, 56, 54);
+  --mv-code-inline-text: rgb(184, 187, 38);
+  --mv-bullet: rgb(251, 73, 52);
+  --mv-task-checkbox: rgb(235, 219, 178);
+  --mv-task-checkmark: rgb(184, 187, 38);
+  --mv-table-header-bg: rgb(60, 56, 54);
+  --mv-hr: rgb(102, 92, 84);
+  --mv-selection-bg: rgb(80, 73, 69);
+  --mv-mermaid-label: rgb(131, 165, 152);
+  --mv-ui-gray: rgb(102, 92, 84);
+  --mv-toolbar-bg: rgba(40, 40, 40, 0.92);
+  --mv-toolbar-text: rgb(235, 219, 178);
+  --mv-toolbar-shadow: 0 2px 8px rgba(40, 40, 40, 0.30);
+  --mv-toolbar-btn-hover: rgba(102, 92, 84, 0.22);
+  --mv-toolbar-border: rgba(102, 92, 84, 0.35);
+  --mv-toolbar-active: rgba(131, 165, 152, 0.18);
+  --mv-toolbar-disabled: rgba(102, 92, 84, 0.45);
+  --mv-menu-bg: rgb(40, 40, 40);
+  --mv-menu-sep: rgba(102, 92, 84, 0.30);
+  --mv-submenu-arrow: rgb(102, 92, 84);
+}
+
+[data-mv-scheme="gruvbox"][data-mv-theme="light"] {
+  --mv-bg: rgb(251, 241, 199);
+  --mv-text: rgb(60, 56, 54);
+  --mv-heading: rgb(69, 133, 136);
+  --mv-link: rgb(69, 133, 136);
+  --mv-code-bg: rgb(242, 229, 188);
+  --mv-code-text: rgb(60, 56, 54);
+  --mv-border: rgb(189, 174, 147);
+  --mv-blockquote-border: rgb(175, 58, 3);
+  --mv-blockquote-text: rgb(80, 73, 69);
+  --mv-bold: rgb(215, 153, 33);
+  --mv-italic: rgb(177, 98, 134);
+  --mv-code-inline-bg: rgb(242, 229, 188);
+  --mv-code-inline-text: rgb(121, 116, 14);
+  --mv-bullet: rgb(157, 0, 6);
+  --mv-task-checkbox: rgb(60, 56, 54);
+  --mv-task-checkmark: rgb(121, 116, 14);
+  --mv-table-header-bg: rgb(242, 229, 188);
+  --mv-hr: rgb(189, 174, 147);
+  --mv-selection-bg: rgb(213, 196, 161);
+  --mv-mermaid-label: rgb(69, 133, 136);
+  --mv-ui-gray: rgb(189, 174, 147);
+  --mv-toolbar-bg: rgba(251, 241, 199, 0.92);
+  --mv-toolbar-text: rgb(60, 56, 54);
+  --mv-toolbar-shadow: 0 2px 8px rgba(251, 241, 199, 0.30);
+  --mv-toolbar-btn-hover: rgba(189, 174, 147, 0.22);
+  --mv-toolbar-border: rgba(189, 174, 147, 0.35);
+  --mv-toolbar-active: rgba(69, 133, 136, 0.18);
+  --mv-toolbar-disabled: rgba(189, 174, 147, 0.45);
+  --mv-menu-bg: rgb(251, 241, 199);
+  --mv-menu-sep: rgba(189, 174, 147, 0.30);
+  --mv-submenu-arrow: rgb(189, 174, 147);
+}
+
+[data-mv-scheme="tokyo-night"][data-mv-theme="dark"] {
+  --mv-bg: rgb(26, 27, 38);
+  --mv-text: rgb(169, 177, 214);
+  --mv-heading: rgb(122, 162, 247);
+  --mv-link: rgb(122, 162, 247);
+  --mv-code-bg: rgb(36, 40, 59);
+  --mv-code-text: rgb(169, 177, 214);
+  --mv-border: rgb(65, 72, 104);
+  --mv-blockquote-border: rgb(187, 154, 247);
+  --mv-blockquote-text: rgb(131, 139, 174);
+  --mv-bold: rgb(224, 175, 104);
+  --mv-italic: rgb(187, 154, 247);
+  --mv-code-inline-bg: rgb(36, 40, 59);
+  --mv-code-inline-text: rgb(115, 218, 202);
+  --mv-bullet: rgb(247, 118, 142);
+  --mv-task-checkbox: rgb(169, 177, 214);
+  --mv-task-checkmark: rgb(115, 218, 202);
+  --mv-table-header-bg: rgb(36, 40, 59);
+  --mv-hr: rgb(65, 72, 104);
+  --mv-selection-bg: rgb(51, 59, 91);
+  --mv-mermaid-label: rgb(122, 162, 247);
+  --mv-ui-gray: rgb(65, 72, 104);
+  --mv-toolbar-bg: rgba(26, 27, 38, 0.92);
+  --mv-toolbar-text: rgb(169, 177, 214);
+  --mv-toolbar-shadow: 0 2px 8px rgba(26, 27, 38, 0.30);
+  --mv-toolbar-btn-hover: rgba(65, 72, 104, 0.22);
+  --mv-toolbar-border: rgba(65, 72, 104, 0.35);
+  --mv-toolbar-active: rgba(122, 162, 247, 0.18);
+  --mv-toolbar-disabled: rgba(65, 72, 104, 0.45);
+  --mv-menu-bg: rgb(26, 27, 38);
+  --mv-menu-sep: rgba(65, 72, 104, 0.30);
+  --mv-submenu-arrow: rgb(65, 72, 104);
+}
+
+[data-mv-scheme="tokyo-night"][data-mv-theme="light"] {
+  --mv-bg: rgb(213, 214, 219);
+  --mv-text: rgb(52, 59, 88);
+  --mv-heading: rgb(52, 84, 138);
+  --mv-link: rgb(52, 84, 138);
+  --mv-code-bg: rgb(224, 225, 230);
+  --mv-code-text: rgb(52, 59, 88);
+  --mv-border: rgb(155, 160, 180);
+  --mv-blockquote-border: rgb(90, 74, 120);
+  --mv-blockquote-text: rgb(105, 112, 138);
+  --mv-bold: rgb(138, 99, 4);
+  --mv-italic: rgb(90, 74, 120);
+  --mv-code-inline-bg: rgb(224, 225, 230);
+  --mv-code-inline-text: rgb(72, 94, 88);
+  --mv-bullet: rgb(186, 57, 74);
+  --mv-task-checkbox: rgb(52, 59, 88);
+  --mv-task-checkmark: rgb(55, 130, 110);
+  --mv-table-header-bg: rgb(224, 225, 230);
+  --mv-hr: rgb(155, 160, 180);
+  --mv-selection-bg: rgb(192, 195, 210);
+  --mv-mermaid-label: rgb(52, 84, 138);
+  --mv-ui-gray: rgb(155, 160, 180);
+  --mv-toolbar-bg: rgba(213, 214, 219, 0.92);
+  --mv-toolbar-text: rgb(52, 59, 88);
+  --mv-toolbar-shadow: 0 2px 8px rgba(213, 214, 219, 0.30);
+  --mv-toolbar-btn-hover: rgba(155, 160, 180, 0.22);
+  --mv-toolbar-border: rgba(155, 160, 180, 0.35);
+  --mv-toolbar-active: rgba(52, 84, 138, 0.18);
+  --mv-toolbar-disabled: rgba(155, 160, 180, 0.45);
+  --mv-menu-bg: rgb(213, 214, 219);
+  --mv-menu-sep: rgba(155, 160, 180, 0.30);
+  --mv-submenu-arrow: rgb(155, 160, 180);
+}
+
+[data-mv-scheme="one-dark"][data-mv-theme="dark"] {
+  --mv-bg: rgb(40, 44, 52);
+  --mv-text: rgb(171, 178, 191);
+  --mv-heading: rgb(97, 175, 239);
+  --mv-link: rgb(97, 175, 239);
+  --mv-code-bg: rgb(53, 59, 69);
+  --mv-code-text: rgb(171, 178, 191);
+  --mv-border: rgb(76, 82, 99);
+  --mv-blockquote-border: rgb(198, 120, 221);
+  --mv-blockquote-text: rgb(130, 137, 151);
+  --mv-bold: rgb(209, 154, 102);
+  --mv-italic: rgb(198, 120, 221);
+  --mv-code-inline-bg: rgb(53, 59, 69);
+  --mv-code-inline-text: rgb(152, 195, 121);
+  --mv-bullet: rgb(224, 108, 117);
+  --mv-task-checkbox: rgb(171, 178, 191);
+  --mv-task-checkmark: rgb(152, 195, 121);
+  --mv-table-header-bg: rgb(53, 59, 69);
+  --mv-hr: rgb(76, 82, 99);
+  --mv-selection-bg: rgb(62, 68, 81);
+  --mv-mermaid-label: rgb(97, 175, 239);
+  --mv-ui-gray: rgb(76, 82, 99);
+  --mv-toolbar-bg: rgba(40, 44, 52, 0.92);
+  --mv-toolbar-text: rgb(171, 178, 191);
+  --mv-toolbar-shadow: 0 2px 8px rgba(40, 44, 52, 0.30);
+  --mv-toolbar-btn-hover: rgba(76, 82, 99, 0.22);
+  --mv-toolbar-border: rgba(76, 82, 99, 0.35);
+  --mv-toolbar-active: rgba(97, 175, 239, 0.18);
+  --mv-toolbar-disabled: rgba(76, 82, 99, 0.45);
+  --mv-menu-bg: rgb(40, 44, 52);
+  --mv-menu-sep: rgba(76, 82, 99, 0.30);
+  --mv-submenu-arrow: rgb(76, 82, 99);
+}
+
+[data-mv-scheme="one-dark"][data-mv-theme="light"] {
+  --mv-bg: rgb(250, 250, 250);
+  --mv-text: rgb(56, 58, 66);
+  --mv-heading: rgb(64, 120, 242);
+  --mv-link: rgb(64, 120, 242);
+  --mv-code-bg: rgb(240, 240, 240);
+  --mv-code-text: rgb(56, 58, 66);
+  --mv-border: rgb(195, 195, 200);
+  --mv-blockquote-border: rgb(166, 38, 164);
+  --mv-blockquote-text: rgb(120, 122, 130);
+  --mv-bold: rgb(152, 104, 1);
+  --mv-italic: rgb(166, 38, 164);
+  --mv-code-inline-bg: rgb(240, 240, 240);
+  --mv-code-inline-text: rgb(80, 161, 79);
+  --mv-bullet: rgb(228, 86, 73);
+  --mv-task-checkbox: rgb(56, 58, 66);
+  --mv-task-checkmark: rgb(80, 161, 79);
+  --mv-table-header-bg: rgb(240, 240, 240);
+  --mv-hr: rgb(195, 195, 200);
+  --mv-selection-bg: rgb(218, 218, 225);
+  --mv-mermaid-label: rgb(64, 120, 242);
+  --mv-ui-gray: rgb(195, 195, 200);
+  --mv-toolbar-bg: rgba(250, 250, 250, 0.92);
+  --mv-toolbar-text: rgb(56, 58, 66);
+  --mv-toolbar-shadow: 0 2px 8px rgba(250, 250, 250, 0.30);
+  --mv-toolbar-btn-hover: rgba(195, 195, 200, 0.22);
+  --mv-toolbar-border: rgba(195, 195, 200, 0.35);
+  --mv-toolbar-active: rgba(64, 120, 242, 0.18);
+  --mv-toolbar-disabled: rgba(195, 195, 200, 0.45);
+  --mv-menu-bg: rgb(250, 250, 250);
+  --mv-menu-sep: rgba(195, 195, 200, 0.30);
+  --mv-submenu-arrow: rgb(195, 195, 200);
+}
+
+/* MarkView — base component styles (auto-generated) */
+
+/* Content ----------------------------------------------------------------- */
+/* .mv-root is used by render_html() output; .mv-content is the legacy alias */
+.mv-root,
+.mv-content {
+  background: var(--mv-bg);
+  color: var(--mv-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+}
+
+.mv-root h1, .mv-content h1,
+.mv-root h2, .mv-content h2,
+.mv-root h3, .mv-content h3,
+.mv-root h4, .mv-content h4,
+.mv-root h5, .mv-content h5,
+.mv-root h6, .mv-content h6 {
+  color: var(--mv-heading);
+}
+
+.mv-root a, .mv-content a {
+  color: var(--mv-link);
+  text-decoration: none;
+}
+.mv-root a:hover, .mv-content a:hover {
+  text-decoration: underline;
+}
+
+.mv-root code, .mv-content code {
+  background: var(--mv-code-bg);
+  color: var(--mv-code-text);
+  padding: 0.15em 0.35em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.mv-root pre, .mv-content pre {
+  background: var(--mv-code-bg);
+  color: var(--mv-code-text);
+  padding: 1em;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+.mv-root pre code, .mv-content pre code {
+  background: none;
+  padding: 0;
+}
+
+.mv-root blockquote, .mv-content blockquote {
+  border-left: 4px solid var(--mv-blockquote-border);
+  color: var(--mv-blockquote-text);
+  margin-left: 0;
+  padding: 0.5em 1em;
+}
+
+.mv-root table, .mv-content table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.mv-root th, .mv-content th {
+  background: var(--mv-code-bg);
+}
+.mv-root th, .mv-content th,
+.mv-root td, .mv-content td {
+  border: 1px solid var(--mv-border);
+  padding: 0.5em 0.75em;
+}
+
+.mv-root hr, .mv-content hr {
+  border: none;
+  border-top: 1px solid var(--mv-border);
+  margin: 1.5em 0;
+}
+
+/* render_html() custom classes */
+.mv-root .task-item, .mv-content .task-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.mv-root .task-item input[type="checkbox"],
+.mv-content .task-item input[type="checkbox"] {
+  accent-color: var(--mv-task-checkbox);
+}
+
+.mv-root .toc, .mv-content .toc {
+  padding: 1em;
+  border: 1px solid var(--mv-border);
+  border-radius: 6px;
+  background: var(--mv-code-bg);
+}
+.mv-root .toc ul, .mv-content .toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mv-root .math-inline, .mv-content .math-inline,
+.mv-root .math-display, .mv-content .math-display {
+  font-family: "KaTeX_Math", "Times New Roman", serif;
+}
+.mv-root .math-display, .mv-content .math-display {
+  display: block;
+  text-align: center;
+  padding: 0.5em 0;
+}
+
+/* Toolbar ----------------------------------------------------------------- */
+.mv-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: var(--mv-toolbar-bg);
+  color: var(--mv-toolbar-text);
+  box-shadow: var(--mv-toolbar-shadow);
+  padding: 4px 8px;
+  border-radius: 8px;
+  user-select: none;
+}
+
+.mv-toolbar button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--mv-toolbar-text);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.15s, border-color 0.15s;
+}
+.mv-toolbar button:hover {
+  background: var(--mv-toolbar-btn-hover);
+  border-color: var(--mv-toolbar-border);
+}
+.mv-toolbar button:active,
+.mv-toolbar button.active {
+  background: var(--mv-toolbar-active);
+}
+.mv-toolbar button:disabled {
+  color: var(--mv-toolbar-disabled);
+  cursor: default;
+}
+
+.mv-toolbar .mv-separator {
+  width: 1px;
+  height: 18px;
+  background: var(--mv-toolbar-border);
+  margin: 0 4px;
+}
+
+/* Menu -------------------------------------------------------------------- */
+.mv-menu {
+  position: absolute;
+  background: var(--mv-menu-bg);
+  border: 1px solid var(--mv-toolbar-border);
+  border-radius: 8px;
+  padding: 4px 0;
+  min-width: 180px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  z-index: 1000;
+}
+
+.mv-menu-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 16px;
+  cursor: pointer;
+  color: var(--mv-toolbar-text);
+  font-size: 13px;
+  transition: background 0.12s;
+}
+.mv-menu-item:hover {
+  background: var(--mv-toolbar-btn-hover);
+}
+.mv-menu-item .shortcut {
+  margin-left: auto;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.mv-menu-separator {
+  height: 1px;
+  background: var(--mv-menu-sep);
+  margin: 4px 8px;
+}
+
+.mv-submenu-arrow {
+  color: var(--mv-submenu-arrow);
+  margin-left: auto;
+}
+
+/* Dialogs ----------------------------------------------------------------- */
+.mv-dialog-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.mv-dialog {
+  background: var(--mv-menu-bg);
+  border: 1px solid var(--mv-toolbar-border);
+  border-radius: 12px;
+  padding: 20px 24px;
+  min-width: 320px;
+  max-width: 90vw;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  color: var(--mv-toolbar-text);
+}
+
+.mv-dialog input[type="text"],
+.mv-dialog input[type="search"] {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--mv-toolbar-border);
+  border-radius: 6px;
+  background: var(--mv-bg);
+  color: var(--mv-text);
+  font-size: 14px;
+  box-sizing: border-box;
+}
