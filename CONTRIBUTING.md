@@ -86,14 +86,45 @@ open a PR. At minimum:
 - `CHANGELOG.md` gets an entry under `## [Unreleased]`
 - Screenshots for any UI change
 
+## Signing your commits
+
+`main` requires **signed commits** (every commit on the protected branch is
+checked for a valid signature). Before your first push, configure local
+signing. SSH signing is the easiest path — no GPG, no passphrase.
+
+1. Generate an ed25519 key if you don't already have one:
+   ```bash
+   ssh-keygen -t ed25519 -C "your-email@example.com"
+   ```
+2. Tell git to sign with SSH:
+   ```bash
+   git config --global gpg.format ssh
+   git config --global user.signingkey ~/.ssh/id_ed25519.pub
+   git config --global commit.gpgsign true
+   git config --global tag.gpgsign true
+   ```
+3. Add the **public** key to GitHub as a **Signing Key** (not an Auth key —
+   it's a separate list): https://github.com/settings/ssh/new → select
+   "Signing Key" as the key type. The same key can be both Auth and Signing;
+   if so, add it twice (once under each type).
+
+Verify that the first commit you push shows a green **Verified** badge on
+GitHub. If it shows "Unverified", the pubkey upload at step 3 didn't land
+under Signing Keys.
+
 ## Branch protection
 
-`main` is protected. PRs require:
+`main` is protected with the following rules (enforced for admins too):
 
-- 5 passing status checks (unit tests, npm audit, manifest validation,
-  CodeQL, Semgrep)
-- Resolved review conversations
-- Linear history (merge commits blocked)
+- **Require a pull request before merging** — no direct pushes
+- **Required status checks must pass** — 12 contexts including unit tests,
+  coverage, manifest validation, npm audit, CodeQL, Semgrep, Scorecard,
+  FOSSA (license + security + dependency), Snyk, codecov/patch
+- **Branches must be up to date** before merging
+- **Conversation resolution** required
+- **Linear history** required (no merge commits)
+- **Signed commits** required (see previous section)
+- **Force pushes** and **deletions** blocked
 
 ## License
 
