@@ -1,0 +1,86 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag to release (e.g. v0.5.3)"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    name: Package + sign + publish
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Resolve tag
+        id: tag
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "name=${{ inputs.tag }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "name=${GITHUB_REF_NAME}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Validate manifest version matches tag
+        run: |
+          MANIFEST_VERSION=$(node -e "console.log(JSON.parse(require('fs').readFileSync('manifest.json','utf8')).version)")
+          TAG_VERSION="${{ steps.tag.outputs.name }}"
+          TAG_VERSION="${TAG_VERSION#v}"
+          if [ "$MANIFEST_VERSION" != "$TAG_VERSION" ]; then
+            echo "manifest.json version ($MANIFEST_VERSION) does not match tag ($TAG_VERSION)"
+            exit 1
+          fi
+          echo "Version match: v$MANIFEST_VERSION"
+
+      - name: Package extension zip
+        run: |
+          ZIP_NAME="markview-chrome-${{ steps.tag.outputs.name }}.zip"
+          zip -r "$ZIP_NAME" . \
+            -x '.git/*' \
+            -x '.github/*' \
+            -x 'tests/*' \
+            -x 'docs/*' \
+            -x 'store-assets/*' \
+            -x 'node_modules/*' \
+            -x 'editor/*' \
+            -x '*.md' \
+            -x 'package*.json'
+          echo "ZIP_NAME=$ZIP_NAME" >> "$GITHUB_ENV"
+          ls -lh "$ZIP_NAME"
+
+      - name: Install Cosign
+        uses: sigstore/cosign-installer@e1523de7571e31dbe865fd2e80c5c7c23ae71eb4 # v3.7.1
+
+      - name: Sign zip (keyless, Sigstore OIDC)
+        run: |
+          cosign sign-blob --yes \
+            --output-signature "${ZIP_NAME}.sig" \
+            --output-certificate "${ZIP_NAME}.pem" \
+            "$ZIP_NAME"
+
+      - name: Generate SHA256 checksum
+        run: sha256sum "$ZIP_NAME" > "${ZIP_NAME}.sha256"
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@72f2c25fcb47643c292f7107632f7a47c1df5cd8 # v2.3.2
+        with:
+          tag_name: ${{ steps.tag.outputs.name }}
+          name: ${{ steps.tag.outputs.name }}
+          generate_release_notes: true
+          fail_on_unmatched_files: true
+          files: |
+            ${{ env.ZIP_NAME }}
+            ${{ env.ZIP_NAME }}.sig
+            ${{ env.ZIP_NAME }}.pem
+            ${{ env.ZIP_NAME }}.sha256
