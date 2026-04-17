@@ -10,6 +10,7 @@
 [![Contributor Covenant 2.1](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 [![GitHub release](https://img.shields.io/github/v/release/davidcforbes/markview-chrome?sort=semver)](https://github.com/davidcforbes/markview-chrome/releases/latest)
 [![Last commit](https://img.shields.io/github/last-commit/davidcforbes/markview-chrome)](https://github.com/davidcforbes/markview-chrome/commits/main)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdavidcforbes%2Fmarkview-chrome.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fdavidcforbes%2Fmarkview-chrome?ref=badge_shield)
 
 A Chrome extension that detects raw Markdown files and renders them with
 GitHub-flavored Markdown support, Mermaid diagrams, syntax-highlighted code,
@@ -98,6 +99,9 @@ it to you. See [PRIVACY.md](PRIVACY.md) for the full policy.
 
 **[MIT](LICENSE).** Use the extension freely, including at work or in
 commercial products. No restrictions, no usage caps.
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fdavidcforbes%2Fmarkview-chrome.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fdavidcforbes%2Fmarkview-chrome?ref=badge_large)
 
 ## Support the project & premium features
 
