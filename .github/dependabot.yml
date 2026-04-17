@@ -13,6 +13,12 @@ updates:
     commit-message:
       prefix: "npm"
       include: "scope"
+    groups:
+      npm-minor-and-patch:
+        applies-to: version-updates
+        update-types:
+          - "minor"
+          - "patch"
 
   - package-ecosystem: "npm"
     directory: "/tests"
@@ -28,6 +34,12 @@ updates:
     commit-message:
       prefix: "tests"
       include: "scope"
+    groups:
+      tests-minor-and-patch:
+        applies-to: version-updates
+        update-types:
+          - "minor"
+          - "patch"
 
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -43,3 +55,9 @@ updates:
     commit-message:
       prefix: "ci"
       include: "scope"
+    groups:
+      actions-minor-and-patch:
+        applies-to: version-updates
+        update-types:
+          - "minor"
+          - "patch"
