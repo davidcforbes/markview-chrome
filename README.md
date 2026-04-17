@@ -4,6 +4,7 @@
 [![CodeQL](https://github.com/davidcforbes/markview-chrome/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/davidcforbes/markview-chrome/actions/workflows/codeql.yml)
 [![Semgrep](https://github.com/davidcforbes/markview-chrome/actions/workflows/semgrep.yml/badge.svg?branch=main)](https://github.com/davidcforbes/markview-chrome/actions/workflows/semgrep.yml)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/davidcforbes/markview-chrome/badge)](https://scorecard.dev/viewer/?uri=github.com/davidcforbes/markview-chrome)
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/12569/badge)](https://www.bestpractices.dev/projects/12569)
 [![codecov](https://codecov.io/github/davidcforbes/markview-chrome/branch/main/graph/badge.svg)](https://codecov.io/github/davidcforbes/markview-chrome)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Contributor Covenant 2.1](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
