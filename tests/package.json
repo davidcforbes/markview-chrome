@@ -10,7 +10,7 @@
     "test": "npm run test:unit && npm run test:e2e"
   },
   "devDependencies": {
-    "@playwright/test": "^1.48.0",
+    "@playwright/test": "^1.60.0",
     "c8": "^10.1.3"
   }
 }
